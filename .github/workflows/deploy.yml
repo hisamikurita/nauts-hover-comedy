@@ -33,7 +33,7 @@ jobs:
 
       - run: pnpm build
         env:
-          VITE_BASE: /mediapipe-hand-tracking/
+          VITE_BASE: /nauts-hover/
 
       - uses: actions/configure-pages@v5
 
