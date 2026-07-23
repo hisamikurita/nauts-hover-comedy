@@ -2,6 +2,7 @@ export * from "./background";
 export * from "./constants";
 export * from "./core";
 export * from "./handView";
+export * from "./hoverButton";
 export * from "./interactions";
 export * from "./lights";
 export * from "./material";

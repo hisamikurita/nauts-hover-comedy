@@ -6,14 +6,14 @@ export const FOG = {
 	FAR: 55,
 } as const;
 
-// Camera
+// Camera: 真上から床を見下ろす俯瞰視点
 export const CAMERA = {
 	FOV: 35,
 	NEAR: 0.1,
 	FAR: 100,
-	INITIAL_Z: 14,
+	INITIAL_Y: 22,
 	// モバイルはカメラを引いてシーン全体を小さく収める
-	MOBILE_Z: 24,
+	MOBILE_Y: 32,
 } as const;
 
 // モバイルではトイのサイズ自体も縮めて、狭いビューポートで見せる
@@ -27,7 +27,7 @@ export const SHADING_PARAMS = {
 	keyLight: 4,
 	rimLight: 1.2,
 	ambient: 0.35,
-	shadowOpacity: 0.35,
+	shadowOpacity: 0.12,
 };
 
 // Background
@@ -35,10 +35,10 @@ export const FLOOR_COLOR = "#e5ded2";
 
 // Physics
 export const FLOOR_Y = -4;
-// z軸はMediaPipeで操作しづらいので奥行きを狭くして浅い遊びゾーンにする
-// 手前側はカメラに近づきすぎないようにさらに浅くする
-export const Z_BACK_LIMIT = 2.8;
-export const Z_FRONT_LIMIT = 1.2;
+
+// 手首→中指付け根の目標ワールド距離。handTracking のランドマーク正規化と
+// interactions の当たり判定サイズの両方に使うので共有定数として置く
+export const TARGET_HAND_SPAN = 2.8;
 
 // MediaPipe hand landmarks
 export const FINGER_CHAINS: number[][] = [

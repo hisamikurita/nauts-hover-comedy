@@ -12,6 +12,8 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+// hoverButton の液体フィル表現でマテリアル単位のクリッピングを使う
+renderer.localClippingEnabled = true;
 
 export const scene = new THREE.Scene();
 scene.background = new THREE.Color(BACKGROUND_COLOR);
@@ -25,7 +27,8 @@ export const camera = new THREE.PerspectiveCamera(
 	CAMERA.NEAR,
 	CAMERA.FAR,
 );
-camera.position.set(0, 0, isMobile ? CAMERA.MOBILE_Z : CAMERA.INITIAL_Z);
+// 真上から床(y=FLOOR_Y)を見下ろす。z=0.001 の微小オフセットで up ベクトル反転を防ぐ
+camera.position.set(0, isMobile ? CAMERA.MOBILE_Y : CAMERA.INITIAL_Y, 0.001);
 camera.lookAt(0, 0, 0);
 
 export const handleResize = (): void => {

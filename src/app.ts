@@ -5,6 +5,7 @@ import {
 	loadRigModel,
 	startAnimationLoop,
 	updateHandDisplay,
+	updateHoverButton,
 	updatePhysics,
 } from "./webgl";
 
@@ -27,6 +28,7 @@ if (document.documentElement.dataset.mobile === "true") {
 	startAnimationLoop(() => {
 		updateHand();
 		updateHandDisplay();
+		updateHoverButton();
 		updatePhysics();
 	});
 }
