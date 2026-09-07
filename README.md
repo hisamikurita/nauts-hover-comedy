@@ -1,6 +1,6 @@
 # Nauts ホバー大喜利
 
-Hand-tracking toy: hover the button to rain Nauts ホバー大喜利 characters
+Hand-tracking toy: hover the button to rain [Nauts ホバー大喜利](https://note.com/nautsdc/n/n2c66da8cb510) characters
 
 - <a href="https://hisamikurita.github.io/nauts-hover-comedy/">DEMO</a>
 
