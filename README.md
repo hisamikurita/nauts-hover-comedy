@@ -2,7 +2,7 @@
 
 Hand-tracking toy: hover the button to rain Nauts ホバー大喜利 characters
 
-- <a href="https://hisamikurita.github.io/nauts-hover/">DEMO</a>
+- <a href="https://hisamikurita.github.io/nauts-hover-comedy/">DEMO</a>
 
 ![OGP](./public/ogp.png)
 
