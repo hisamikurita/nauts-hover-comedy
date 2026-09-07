@@ -1,8 +1,8 @@
-# MediaPipe Hand Tracking
+# Nauts ホバー大喜利
 
-Interactive hand-tracked toy experience built with MediaPipe, Three.js and Cannon-es, 🤖 Generated with Claude Code Fable 5
+Hand-tracking toy: hover the button to rain Nauts ホバー大喜利 characters
 
-- <a href="https://hisamikurita.github.io/mediapipe-hand-tracking/">DEMO</a>
+- <a href="https://hisamikurita.github.io/nauts-hover/">DEMO</a>
 
 ![OGP](./public/ogp.png)
 
